@@ -1,5 +1,20 @@
 .Inicial {
     text-align: center;
+    color: black;
+    flex: 6;
+    background-image: url('../img/fondoGris.jpg');
+}
+
+.label_title1{
+  background-color: transparent;
+  margin-top: 8rem;
+  color: black;
+
+}
+
+.title-h1{
+  top: 13%;
+  color: black;
 }
 
 table {
@@ -19,9 +34,41 @@ table {
     background-color: #dddddd;
   }
   
-  .voc-view{
-    max-width: 940px;
-    display: block;
-    margin: 0 auto;
+  .voc_view{
+    margin: 95px;
+    color: black;
   }
 
+  .puntajes {
+    display: inline-block;
+    color: black
+  }
+
+  .widget_container{
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+
+    justify-content: center;
+    grid-template-columns: 180px 180px 180px 180px; /*Make the grid smaller than the container*/
+  }
+
+
+  .footer_reportes_voc {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 16px;
+    background-color: black;
+    padding-bottom: 1.5rem;
+ 
+   }
+
+   .voc_footer{
+    margin-bottom: 0;
+    background-color: black;
+    padding-top: 1.5rem;
+    color: white;
+   }

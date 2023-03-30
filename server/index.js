@@ -8,9 +8,11 @@ const cors = require('cors');
 app.use(express.json());
 app.use(cors());
 
-//mongoose.connect("mongodb+srv://adminsam:MHuVfjN9BqhnUDwF@clusterces.lw20lzx.mongodb.net/CES-HR?retryWrites=true&w=majority");
 mongoose.connect("mongodb+srv://adminsam:MHuVfjN9BqhnUDwF@clusterces.lw20lzx.mongodb.net/CES-HR?retryWrites=true&w=majority");
 
+app.listen(3001, ()=>{
+    console.log("Server up and good!!");
+});
 
 app.get("/getVocs", (req,res) => {
     VocModel.find({}, (err,result) => {
@@ -40,7 +42,5 @@ app.post("/submitVOC",async (req, res) => {
     res.json(vocRecord);
 });
 
-app.listen(3001, ()=>{
-    console.log("Server up and good!!");
-});
+
 
